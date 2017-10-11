@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.widget.RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="siems.devin.assignment1.ViewInfoActivity">
+
+    <TextView
+        android:id="@+id/photoName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/photoNameTitle"
+        android:layout_alignBottom="@+id/photoNameTitle"
+        android:layout_marginStart="48dp"
+        android:layout_toEndOf="@+id/photographerTitle"
+        android:text="@string/photo_name_text_view" />
+
+    <TextView
+        android:id="@+id/photographer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/photoYearTitle"
+        android:layout_alignStart="@+id/photoName"
+        android:text="@string/photographer_text_view" />
+
+    <TextView
+        android:id="@+id/photoYear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/photoYearTitle"
+        android:layout_alignBottom="@+id/photoYearTitle"
+        android:layout_alignStart="@+id/photographer"
+        android:text="@string/photo_year_text_view" />
+
+    <TextView
+        android:id="@+id/photoNameTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="85dp"
+        android:layout_marginTop="155dp"
+        android:text="@string/photo_name"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:id="@+id/photographerTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/photoNameTitle"
+        android:layout_below="@+id/photoNameTitle"
+        android:layout_marginTop="53dp"
+        android:text="@string/photographer_name" />
+
+    <TextView
+        android:id="@+id/photoYearTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/photographerTitle"
+        android:layout_below="@+id/photographerTitle"
+        android:layout_marginTop="46dp"
+        android:text="@string/year_taken" />
+</android.widget.RelativeLayout>
