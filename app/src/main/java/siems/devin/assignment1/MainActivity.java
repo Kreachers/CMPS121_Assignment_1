@@ -12,13 +12,24 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        Button button = (Button)findViewById(R.id.enter_info_button);
-        button.setOnClickListener(new View.OnClickListener() {
+
+        Button enterButton = (Button)findViewById(R.id.enter_info_button);
+        enterButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(MainActivity.this, EnterInfoActivity.class);
                 startActivity(intent);
             }
         });
+
+        Button exitButton = (Button)findViewById(R.id.exit_button);
+        exitButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                finish();
+            }
+        });
+
+        Button viewButton = (Button)findViewById(R.id.view_button);
     }
 }
