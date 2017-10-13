@@ -50,17 +50,17 @@
                 android:textAppearance="@android:style/TextAppearance.Material.Medium" />
 
             <TextView
-                android:id="@+id/photoYear"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/photo_year_taken_text_view"
-                android:textAppearance="@android:style/TextAppearance.Material.Medium" />
-
-            <TextView
                 android:id="@+id/photographer"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/photographer_text_view"
+                android:textAppearance="@android:style/TextAppearance.Material.Medium" />
+
+            <TextView
+                android:id="@+id/photoYear"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/photo_year_taken_text_view"
                 android:textAppearance="@android:style/TextAppearance.Material.Medium" />
         </LinearLayout>
     </ScrollView>

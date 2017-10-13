@@ -19,8 +19,8 @@ public class ViewInfoActivity extends AppCompatActivity {
         photographerTextView.setText(getString(R.string.photographer_name));
         photoYearTextView.setText(getString(R.string.photo_year_taken));
 
-        photoNameTextView.append(EnterInfoActivity.photoName);
+        photoNameTextView.append("     " + EnterInfoActivity.photoName);
         photographerTextView.append(EnterInfoActivity.photographer);
-        photoYearTextView.append(EnterInfoActivity.photoYear);
+        photoYearTextView.append("     " + EnterInfoActivity.photoYear);
     }
 }
