@@ -15,13 +15,14 @@ import java.util.ArrayList;
 
 public class EnterInfoActivity extends Activity implements OnItemSelectedListener {
 
-    public static String photoName;
-    public static String photographer;
-    public static String photoYear;
-    public static String listViewText;
+//    public String photoName = null;
+//    public String photographer = null;
+    public String photoYear = null;
+    static ArrayList<String> list = new <String>ArrayList();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_enter_info);
 
@@ -46,17 +47,15 @@ public class EnterInfoActivity extends Activity implements OnItemSelectedListene
         // attaching data adapter to spinner
         yearSpin.setAdapter(dataAdapter);
 
-//        photoName = photoNameText.getText().toString();
-//        photographer = photographerText.getText().toString();
-
         Button done = findViewById(R.id.done_Button);
         done.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                photoName = photoNameText.getText().toString();
-                photographer = photographerText.getText().toString();
-                //photoYear = photoYearText.getText().toString();
-                listViewText = photoName + " by " + photographer + " in " + photoYear;
+//                photoName = photoNameText.getText().toString();
+//                photographer = photographerText.getText().toString();
+//                photoYear = photoYearText.getText().toString();
+
+                list.add(photoNameText.getText().toString() + " by " + photographerText.getText().toString() + " in " + photoYear);
                 finish();
             }
         });

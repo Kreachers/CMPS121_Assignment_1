@@ -18,7 +18,7 @@ public class ViewInfoActivity extends AppCompatActivity {
         setContentView(R.layout.activity_view_info);
 
         listview = (ListView)findViewById(R.id.list_view);
-        ArrayList list = MainActivity.list;
+        ArrayList list = EnterInfoActivity.list;
 
         adapter = new ArrayAdapter(this, android.R.layout.simple_list_item_1, list);
         listview.setAdapter(adapter);
