@@ -6,28 +6,23 @@
     android:layout_height="match_parent"
     tools:context="siems.devin.assignment1.EnterInfoActivity">
 
-    <Button
-        android:id="@+id/done_Button"
+    <EditText
+        android:id="@+id/editTextName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="61dp"
-        android:text="@string/done"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        tools:layout_constraintBottom_creator="1"
-        tools:layout_constraintLeft_creator="1"
-        tools:layout_constraintRight_creator="1"
-        android:layout_below="@+id/spinnerYear"
-        android:layout_centerHorizontal="true" />
+        android:layout_above="@+id/editTextPhotographer"
+        android:layout_alignStart="@+id/editTextPhotographer"
+        android:layout_marginBottom="90dp"
+        android:ems="10"
+        android:hint="@string/photo_name"
+        android:inputType="textPersonName"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="90dp" />
 
     <EditText
         android:id="@+id/editTextPhotographer"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignStart="@+id/editTextYear"
-        android:layout_below="@+id/editTextName"
-        android:layout_marginTop="50dp"
         android:ems="10"
         android:hint="@string/photographer_name"
         android:inputType="textPersonName"
@@ -37,41 +32,43 @@
         app:layout_constraintTop_toBottomOf="@+id/editTextYear"
         tools:layout_constraintLeft_creator="1"
         tools:layout_constraintRight_creator="1"
-        tools:layout_constraintTop_creator="1" />
+        tools:layout_constraintTop_creator="1"
+        android:layout_marginBottom="90dp"
+        android:layout_above="@+id/spinnerYear"
+        android:layout_centerHorizontal="true" />
 
-    <EditText
-        android:id="@+id/editTextName"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="47dp"
-        android:ems="10"
-        android:hint="@string/photo_name"
-        android:inputType="textPersonName"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:layout_editor_absoluteX="85dp"
-        android:layout_alignParentTop="true"
-        android:layout_alignStart="@+id/editTextPhotographer" />
-
-    <EditText
-        android:id="@+id/editTextYear"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/editTextPhotographer"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="50dp"
-        android:ems="10"
-        android:hint="@string/photo_year_taken"
-        android:inputType="date"
-        app:layout_constraintTop_toBottomOf="@+id/editTextName"
-        tools:layout_editor_absoluteX="85dp" />
+    <!--<EditText-->
+        <!--android:id="@+id/editTextYear"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_below="@+id/editTextPhotographer"-->
+        <!--android:layout_centerHorizontal="true"-->
+        <!--android:ems="10"-->
+        <!--android:hint="@string/photo_year_taken"-->
+        <!--android:inputType="date"-->
 
     <Spinner
         android:id="@+id/spinnerYear"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_below="@+id/editTextYear"
-        android:layout_marginTop="43dp"
-        android:entries="" />
+        android:layout_alignBottom="@+id/done_Button"
+        android:layout_alignEnd="@+id/editTextPhotographer"
+        android:layout_alignStart="@+id/editTextPhotographer"
+        android:layout_marginBottom="150dp" />
+
+    <Button
+        android:id="@+id/done_Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="90dp"
+        android:text="@string/done"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        tools:layout_constraintBottom_creator="1"
+        tools:layout_constraintLeft_creator="1"
+        tools:layout_constraintRight_creator="1" />
 
 </android.widget.RelativeLayout>

@@ -5,64 +5,73 @@
     android:layout_height="match_parent"
     tools:context="siems.devin.assignment1.ViewInfoActivity">
 
-    <ScrollView
+    <ListView
+        android:id="@+id/list_view"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:scrollbarStyle="insideOverlay">
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:divider="@android:drawable/divider_horizontal_textfield"
+        android:dividerHeight="5dp" />
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:weightSum="1">
-            <!--
-            <TextView
-                android:id="@+id/photoNameTitle"
-                android:layout_width="wrap_content"
-                android:layout_height="0dp"
-                android:layout_marginStart="49dp"
-                android:layout_marginTop="154dp"
-                android:layout_weight="1.19"
-                android:text="@string/photo_name"
-                android:textAppearance="@android:style/TextAppearance.Material.Medium" />
+    <!--<ScrollView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:scrollbarStyle="insideOverlay">-->
 
-            <TextView
-                android:id="@+id/photoYearTitle"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="46dp"
-                android:text="@string/photo_year_taken"
-                android:textAppearance="@android:style/TextAppearance.Material.Medium" />
+        <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:orientation="vertical"-->
+            <!--android:weightSum="1">-->
+            <!--&lt;!&ndash;-->
+            <!--<TextView-->
+                <!--android:id="@+id/photoNameTitle"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="0dp"-->
+                <!--android:layout_marginStart="49dp"-->
+                <!--android:layout_marginTop="154dp"-->
+                <!--android:layout_weight="1.19"-->
+                <!--android:text="@string/photo_name"-->
+                <!--android:textAppearance="@android:style/TextAppearance.Material.Medium" />-->
 
-            <TextView
-                android:id="@+id/photographerTitle"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="53dp"
-                android:text="@string/photographer_name"
-                android:textAppearance="@android:style/TextAppearance.Material.Medium" />
--->
-            <TextView
-                android:id="@+id/photoName"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/photo_name_text_view"
-                android:textAppearance="@android:style/TextAppearance.Material.Medium" />
+            <!--<TextView-->
+                <!--android:id="@+id/photoYearTitle"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginTop="46dp"-->
+                <!--android:text="@string/photo_year_taken"-->
+                <!--android:textAppearance="@android:style/TextAppearance.Material.Medium" />-->
 
-            <TextView
-                android:id="@+id/photographer"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/photographer_text_view"
-                android:textAppearance="@android:style/TextAppearance.Material.Medium" />
+            <!--<TextView-->
+                <!--android:id="@+id/photographerTitle"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginTop="53dp"-->
+                <!--android:text="@string/photographer_name"-->
+                <!--android:textAppearance="@android:style/TextAppearance.Material.Medium" />-->
+<!--&ndash;&gt;-->
+            <!--<TextView-->
+                <!--android:id="@+id/photoName"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="@string/photo_name_text_view"-->
+                <!--android:textAppearance="@android:style/TextAppearance.Material.Medium" />-->
 
-            <TextView
-                android:id="@+id/photoYear"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/photo_year_taken_text_view"
-                android:textAppearance="@android:style/TextAppearance.Material.Medium" />
-        </LinearLayout>
-    </ScrollView>
+            <!--<TextView-->
+                <!--android:id="@+id/photographer"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="@string/photographer_text_view"-->
+                <!--android:textAppearance="@android:style/TextAppearance.Material.Medium" />-->
+
+            <!--<TextView-->
+                <!--android:id="@+id/photoYear"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="@string/photo_year_taken_text_view"-->
+                <!--android:textAppearance="@android:style/TextAppearance.Material.Medium" />-->
+        <!--</LinearLayout>-->
+    <!--</ScrollView>-->
 
 </android.widget.RelativeLayout>
