@@ -27,20 +27,20 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        Button exitButton = (Button)findViewById(R.id.exit_button);
-        exitButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                finish();
-            }
-        });
-
         Button viewButton = (Button)findViewById(R.id.view_button);
         viewButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(MainActivity.this, ViewInfoActivity.class);
                 startActivity(intent);
+            }
+        });
+
+        Button exitButton = (Button)findViewById(R.id.exit_button);
+        exitButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                finish();
             }
         });
     }

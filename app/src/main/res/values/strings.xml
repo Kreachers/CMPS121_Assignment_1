@@ -3,10 +3,10 @@
     <string name="done">Done</string>
     <string name="photo_name">Photo name</string>
     <string name="photographer_name">Photographer name</string>
-    <string name="photo_year_taken">Year taken</string>
-    <string name="photo_name_text_view">Photo name</string>
-    <string name="photographer_text_view">Photographer</string>
-    <string name="photo_year_taken_text_view">Year taken</string>
+    <!--<string name="photo_year_taken">Year taken</string>-->
+    <!--<string name="photo_name_text_view">Photo name</string>-->
+    <!--<string name="photographer_text_view">Photographer</string>-->
+    <!--<string name="photo_year_taken_text_view">Year taken</string>-->
     <string name="enter_info">Enter Info</string>
     <string name="exit">Exit</string>
     <string name="view">View</string>
