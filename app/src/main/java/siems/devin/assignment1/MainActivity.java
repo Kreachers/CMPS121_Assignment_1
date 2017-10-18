@@ -26,7 +26,6 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-        ///afipjok er;lsdf
 
         Button viewButton = (Button)findViewById(R.id.view_button);
         viewButton.setOnClickListener(new View.OnClickListener() {
