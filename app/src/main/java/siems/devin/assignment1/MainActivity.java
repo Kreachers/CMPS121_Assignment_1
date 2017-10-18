@@ -26,6 +26,7 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+        ///hello
 
         Button viewButton = (Button)findViewById(R.id.view_button);
         viewButton.setOnClickListener(new View.OnClickListener() {
