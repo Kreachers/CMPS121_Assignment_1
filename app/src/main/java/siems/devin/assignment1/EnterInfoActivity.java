@@ -3,22 +3,23 @@ package siems.devin.assignment1;
 import android.app.Activity;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.AdapterView;
+import android.widget.AdapterView.OnItemSelectedListener;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Spinner;
-import android.widget.AdapterView;
 import android.widget.Toast;
-import android.widget.AdapterView.OnItemSelectedListener;
+
 import java.util.ArrayList;
 
 
 public class EnterInfoActivity extends Activity implements OnItemSelectedListener {
 
-//    public String photoName = null;
+    static ArrayList list = new <String>ArrayList();
+    //    public String photoName = null;
 //    public String photographer = null;
     public String photoYear = null;
-    static ArrayList<String> list = new <String>ArrayList();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -34,8 +35,8 @@ public class EnterInfoActivity extends Activity implements OnItemSelectedListene
         yearSpin.setOnItemSelectedListener(this);
 
         ArrayList<Integer> spinnerEntries = new ArrayList<>();
-        for(int i = 0; i <= 40; i++){
-            spinnerEntries.add(2017-i);
+        for (int i = 0; i <= 40; i++) {
+            spinnerEntries.add(2017 - i);
         }
 
         // Creating adapter for spinner
@@ -69,6 +70,7 @@ public class EnterInfoActivity extends Activity implements OnItemSelectedListene
         Toast.makeText(parent.getContext(), "Selected: " + photoYearSpinner, Toast.LENGTH_LONG).show();
         photoYear = photoYearSpinner;
     }
+
     public void onNothingSelected(AdapterView<?> arg0) {
         // TODO Auto-generated method stub
     }

@@ -1,13 +1,11 @@
 package siems.devin.assignment1;
 
 
-
 import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
-
 
 
 public class MainActivity extends AppCompatActivity {
@@ -17,7 +15,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        Button enterButton = (Button)findViewById(R.id.enter_info_button);
+        Button enterButton = (Button) findViewById(R.id.enter_info_button);
         enterButton.setOnClickListener(new View.OnClickListener() {
 
             @Override
@@ -27,7 +25,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        Button viewButton = (Button)findViewById(R.id.view_button);
+        Button viewButton = (Button) findViewById(R.id.view_button);
         viewButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -36,7 +34,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        Button exitButton = (Button)findViewById(R.id.exit_button);
+        Button exitButton = (Button) findViewById(R.id.exit_button);
         exitButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

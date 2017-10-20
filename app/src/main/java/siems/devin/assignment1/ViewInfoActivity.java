@@ -1,10 +1,11 @@
 package siems.devin.assignment1;
 
 
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
+
 import java.util.ArrayList;
 
 
@@ -17,7 +18,7 @@ public class ViewInfoActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_view_info);
 
-        listview = (ListView)findViewById(R.id.list_view);
+        listview = (ListView) findViewById(R.id.list_view);
         ArrayList list = EnterInfoActivity.list;
 
         adapter = new ArrayAdapter(this, android.R.layout.simple_list_item_1, list);
